@@ -1,7 +1,9 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_dotenv import DotEnv
+from dotenv import load_dotenv
 from config import Config
+
+load_dotenv()
 
 db = SQLAlchemy()
 
